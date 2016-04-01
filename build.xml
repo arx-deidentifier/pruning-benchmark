@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="JHPL benchmark" default="release" basedir=".">
+
+	<description>Builds, tests, and runs the project.</description>
+
+	<target name="release">
+		<antcall target="buildjar">
+			<param name="experiment" value="high-execution-3.2-heuristic-igreedy" />
+		</antcall>
+		<antcall target="buildjar">
+			<param name="experiment" value="high-execution-3.2-heuristic" />
+		</antcall>
+		<antcall target="buildjar">
+			<param name="experiment" value="high-execution-3.2" />
+		</antcall>
+		<antcall target="buildjar">
+			<param name="experiment" value="high-execution-3.2-notag" />
+		</antcall>
+		<antcall target="buildjar">
+			<param name="experiment" value="low-execution-3.2-list-opt" />
+		</antcall>
+		<antcall target="buildjar">
+			<param name="experiment" value="low-execution-3.2-list-noantichain-opt" />
+		</antcall>
+		<antcall target="buildjar">
+			<param name="experiment" value="low-execution-3.2-list" />
+		</antcall>
+		<antcall target="buildjar">
+			<param name="experiment" value="low-execution-3.2-list-noantichain" />
+		</antcall>
+		<antcall target="buildjar">
+			<param name="experiment" value="low-execution-3.2" />
+		</antcall>
+		<antcall target="buildjar">
+			<param name="experiment" value="low-execution-3.2-nomin" />
+		</antcall>
+		<antcall target="buildjar">
+			<param name="experiment" value="high-execution-3.1" />
+		</antcall>
+		<antcall target="buildjar">
+			<param name="experiment" value="high-memory-3.1" />
+		</antcall>
+		<antcall target="buildjar">
+			<param name="experiment" value="high-memory-3.2" />
+		</antcall>
+		<antcall target="buildjar">
+			<param name="experiment" value="low-execution-3.1" />
+		</antcall>
+		<antcall target="buildjar">
+			<param name="experiment" value="low-memory-3.1" />
+		</antcall>
+		<antcall target="buildjar">
+			<param name="experiment" value="low-memory-3.2" />
+		</antcall>
+		<antcall target="buildjar">
+			<param name="experiment" value="low-jhpl-numbers-3.2" />
+		</antcall>
+		<antcall target="buildjar">
+			<param name="experiment" value="high-jhpl-numbers-3.2" />
+		</antcall>
+
+		<delete dir="build/bin" failonerror="false" />
+		<delete dir="build" failonerror="false" />
+
+	</target>
+
+	<target name="buildjar">
+		<delete dir="build/bin" failonerror="false" />
+		<delete dir="build" failonerror="false" />
+		<mkdir dir="build" />
+		<mkdir dir="build/bin" />
+		<javac includeantruntime="false" destdir="build/bin" source="1.7">
+			<classpath>
+				<fileset dir="src-${experiment}/lib">
+					<include name="**/*.jar" />
+				</fileset>
+			</classpath>
+			<src path="src-${experiment}/src" />
+		</javac>
+		<jar jarfile="build/libs.jar">
+			<zipgroupfileset dir="src-${experiment}/lib">
+				<include name="**/*.jar" />
+			</zipgroupfileset>
+		</jar>
+		<jar destfile="jar-${experiment}.jar">
+			<zipfileset src="build/libs.jar" excludes="META-INF/*.RSA,META-INF/*.SF,META-INF/*.DSA" />
+			<fileset dir="build/bin" defaultexcludes="no" />
+			<manifest>
+				<attribute name="Main-Class" value="org.deidentifier.arx.benchmark.BenchmarkExperiment" />
+			</manifest>
+		</jar>
+	</target>
+</project>
+

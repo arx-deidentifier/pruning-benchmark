@@ -1,0 +1,7 @@
+;;;TimeOptimal;TimeHeuristic
+Dataset;Utility;Privacy;Value;Value
+Adult;Loss;k-anonymity;1293.0;0.0
+Cup;Loss;k-anonymity;8383.0;0.0
+Fars;Loss;k-anonymity;4680.0;0.0
+Atus;Loss;k-anonymity;14869.0;0.0
+Ihis;Loss;k-anonymity;74413.0;0.0

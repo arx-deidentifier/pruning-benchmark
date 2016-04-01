@@ -1,0 +1,7 @@
+;;;Space;Nodes
+Dataset;Utility;Privacy;Value;Value
+Adult;Loss;k-anonymity;3459792.0;12960.0
+Cup;Loss;k-anonymity;7170240.0;45000.0
+Fars;Loss;k-anonymity;8647936.0;20736.0
+Atus;Loss;k-anonymity;3.923144E7;34992.0
+Ihis;Loss;k-anonymity;8.8311728E7;25920.0

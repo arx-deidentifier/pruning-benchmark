@@ -1,0 +1,17 @@
+;;;;;PutProperty;HasProperty;Antichain;Hitrate
+Dataset;Utility;Privacy;Nodes;Property;Value;Value;Value;Value
+Adult;Loss;k-anonymity;12960;Checked;1180.0;106.0;0.0;0.1792452830188679
+Adult;Loss;k-anonymity;12960;Insufficient utility;1062.0;21585.0;0.7354048964218456;0.746907574704656
+Adult;Loss;k-anonymity;12960;Not anonymous;887.0;27005.0;0.9301014656144306;0.1537122755045362
+Cup;Loss;k-anonymity;45000;Checked;1524.0;286.0;0.0;0.09090909090909091
+Cup;Loss;k-anonymity;45000;Insufficient utility;1435.0;46166.0;0.7630662020905923;0.8092752241909631
+Cup;Loss;k-anonymity;45000;Not anonymous;1172.0;63828.0;0.9684300341296929;0.247508930250047
+Fars;Loss;k-anonymity;20736;Checked;1342.0;416.0;0.0;0.11298076923076923
+Fars;Loss;k-anonymity;20736;Insufficient utility;1161.0;23426.0;0.6184323858742463;0.7544181678476906
+Fars;Loss;k-anonymity;20736;Not anonymous;752.0;28384.0;0.8843085106382979;0.10812429537767757
+Atus;Loss;k-anonymity;34992;Checked;1022.0;320.0;0.0;0.065625
+Atus;Loss;k-anonymity;34992;Insufficient utility;903.0;25556.0;0.592469545957918;0.8252856472061355
+Atus;Loss;k-anonymity;34992;Not anonymous;561.0;28572.0;0.9536541889483066;0.05228895422091558
+Ihis;Loss;k-anonymity;25920;Checked;1574.0;574.0;0.0;0.1445993031358885
+Ihis;Loss;k-anonymity;25920;Insufficient utility;1341.0;23653.0;0.4280387770320656;0.7358051832748489
+Ihis;Loss;k-anonymity;25920;Not anonymous;679.0;28244.0;0.9027982326951399;0.07909644526271066

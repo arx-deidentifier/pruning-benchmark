@@ -1,0 +1,15 @@
+;;;TimeOptimal;TimeHeuristic;Transformations
+Attributes;Utility;Privacy;Value;Value;Value
+3;Loss;k-anonymity;0.0;6.0;96.0
+4;Loss;k-anonymity;0.0;21.0;480.0
+5;Loss;k-anonymity;0.0;35.0;1440.0
+6;Loss;k-anonymity;0.0;71.0;4320.0
+7;Loss;k-anonymity;0.0;229.0;12960.0
+8;Loss;k-anonymity;0.0;545.0;38880.0
+9;Loss;k-anonymity;0.0;4477.0;116640.0
+10;Loss;k-anonymity;0.0;24027.0;466560.0
+11;Loss;k-anonymity;0.0;70193.0;1399680.0
+12;Loss;k-anonymity;0.0;215557.0;4199040.0
+13;Loss;k-anonymity;0.0;1032197.0;1.259712E7
+14;Loss;k-anonymity;0.0;2811324.0;3.779136E7
+15;Loss;k-anonymity;0.0;8259833.0;1.1337408E8

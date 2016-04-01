@@ -1,0 +1,12 @@
+;;;TimeOptimal;TimeHeuristic
+Attributes;Utility;Privacy;Value;Value
+3;Loss;k-anonymity;7.0;0.0
+4;Loss;k-anonymity;22.0;0.0
+5;Loss;k-anonymity;44.0;0.0
+6;Loss;k-anonymity;90.0;0.0
+7;Loss;k-anonymity;235.0;0.0
+8;Loss;k-anonymity;574.0;0.0
+9;Loss;k-anonymity;5526.0;0.0
+10;Loss;k-anonymity;24229.0;0.0
+11;Loss;k-anonymity;59553.0;0.0
+12;Loss;k-anonymity;159353.0;0.0

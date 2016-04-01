@@ -1,0 +1,8 @@
+;;;TimeOptimal;TimeHeuristic;TimeCheck
+Dataset;Utility;Privacy;Value;Value;Value
+Adult;Loss;k-anonymity;1433.0;0.0;1198.0
+Cup;Loss;k-anonymity;7820.0;0.0;7241.0
+Fars;Loss;k-anonymity;4362.0;0.0;4087.0
+Atus;Loss;k-anonymity;11334.0;0.0;11123.0
+Ihis;Loss;k-anonymity;66226.0;0.0;65993.0
+SACS;Loss;k-anonymity;34551.0;0.0;21218.0
